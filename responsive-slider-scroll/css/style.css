@@ -1,0 +1,222 @@
+html,
+body {
+    position: relative;
+    overflow-x: hidden
+}
+html {
+    background-color: #fff;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    overflow-y: auto;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+/*.slider-section{
+    padding: 20px;
+}*/
+.marbot50 {
+    margin-bottom: 50px !important
+}
+
+.marbot100 {
+    margin-bottom: 60px !important
+}
+
+.testimonial-slider {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
+    position: relative
+}
+
+/*.showcase .showcase__header {
+    background: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px
+}
+*/
+.testimonial-slider .desktop-wrapper {
+    height: 640px;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 15px;
+    border: 7px solid #000;
+
+}
+
+
+.testimonial-slider .desktop-wrapper img {
+    transition: transform 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    display: none
+}
+
+.testimonial-slider .desktop-wrapper img.active {
+    display: block;
+}
+
+.testimonial-slider .mobile-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 230px;
+    height: 400px;
+    overflow: hidden;
+    right: -25px;
+    bottom: 25px;
+    border-radius: 25px;
+    border: 5px solid #000;
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.25)
+}
+.padtop200 {
+    padding-top: 40px
+}
+
+
+
+
+.testimonial-slider .mobile-wrapper img {
+    position: relative;
+    top: 0;
+    margin-bottom: 10px;
+    transition: transform 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    display: none
+}
+
+.testimonial-slider .mobile-wrapper img.active {
+    display: block;
+}
+
+
+.item-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.item-selector span {
+    border-radius: 200px;
+    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 15px;
+    flex-shrink: 0
+}
+
+
+.item-selector span img {
+    filter: invert(0.7);
+    transition: filter 0.4s ease
+}
+
+.item-selector span img:nth-child(2) {
+    display: none
+}
+.item-selector span.active {
+    background: linear-gradient(54.46deg, #e60083 4.72%, #ffb621 110.8%);
+    box-shadow: 0px 0px 30px rgba(230, 0, 131, 0.5)
+}
+
+.item-selector span.active img {
+    filter: none
+}
+
+.item-selector img {
+    cursor: pointer
+}
+
+.item-selector img.active {
+    -webkit-filter: invert(100%) drop-shadow(0px 0px 5px #222) !important;
+    filter: invert(100%) drop-shadow(0px 0px 5px #222) !important;
+    opacity: 1
+}
+.padtop50 {
+        padding-top: 50px
+    }
+    
+
+@media (max-width:1252px) {
+    .item-selector span img {
+        max-height: 25px !important
+    }
+}
+
+
+@media (max-width:830px) {
+    .container{
+        margin: 0 35px;
+    }
+    .item-selector span img {
+        display: none
+    }
+    .item-selector span img:nth-child(2) {
+        display: block
+    }
+    .testimonial-slider .mobile-wrapper {
+        width: 80px;
+        height: 150px;
+        border-radius: 10px;
+        right: -5px
+    }
+
+    .testimonial-slider .desktop-wrapper {
+        height: 300px
+    }
+    .marbot100 {
+        margin-bottom: 50px !important
+    }
+    .item-selector {
+        margin-left: -10px;
+        margin-right: -10px;
+        flex-direction: row
+    }
+    .item-selector span {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: 0 5px
+    }
+    .item-selector span img{
+        height: auto!important;
+    }
+}
+
+@media (max-width:480px) {
+    .marbot50 {
+        margin-bottom: 25px !important
+    }
+}
+
+@media (max-width: 320px){
+    .item-selector span{
+        width: 28px;
+        height: 28px;
+    }
+
+}
